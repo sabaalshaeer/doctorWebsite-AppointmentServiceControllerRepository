@@ -27,7 +27,7 @@ public class AppointmentsService {
 	}
 	
 	//if you as a Dev, know that this method can throw, then java wants you to declare that up front
-	public void addNewAppointment( Appointment appointment) throws Exception {
+	public void addNewAppointment( Appointment appointment) {
 //		for(Appointment existingAppointment : appointments) {
 //			if (existingAppointment.id.equals(appointment.id))
 //				throw new Exception();
