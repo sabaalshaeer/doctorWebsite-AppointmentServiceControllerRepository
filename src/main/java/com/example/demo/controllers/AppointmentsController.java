@@ -57,7 +57,7 @@ public class AppointmentsController {
 	}
 	
 	@PutMapping("/{id}")
-	public void modifyAppointment(@RequestBody  Long id, Appointment appointment) {
+	public void modifyAppointment(@PathVariable Long id,@RequestBody  Appointment appointment) {
 		try {
 			service.modifyAppointment(id, appointment);
 		}catch (Exception e) {
